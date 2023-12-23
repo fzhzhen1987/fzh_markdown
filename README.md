@@ -43,3 +43,18 @@ git remote remove origin
 git remote add origin git@github.com:
 ```
 
+[5.ctrl 换caps]
+```shell
+命令
+setxkbmap -option ctrl:nocaps
+
+对应的配置文件
+.xinitrc
+
+命令
+localectl set-x11-keymap jp pc105 jp106 ctrl:nocaps
+
+对应的配置文件
+/etc/X11/xorg.conf.d/00-keyboard.conf
+```
+
